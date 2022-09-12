@@ -9,7 +9,8 @@ import SwiftUI
 
 struct RootView: View {
     var body: some View {
-        HomeView()
+       // HomeView()
+        LoginView()
     }
 }
 

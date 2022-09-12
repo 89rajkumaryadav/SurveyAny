@@ -1,17 +1,24 @@
 //
-//  FormListView.swift
+//  FormQuizzList.swift
 //  SurveyAny
 //
-//  Created by Rajkumar Yadav on 26/01/22.
+//  Created by Rajkumar Yadav on 9/9/22.
 //
 
+import Foundation
 import SwiftUI
 
-struct FormListView: View {
+struct FormQuizzList <Content>: View where Content: View{
     
     private var cellHeight:CGFloat = 200;
+    var content: Content
+    
+    init(@ViewBuilder content: () -> Content){
+        self.content = content()
+    }
+    
     var body: some View {
-       
+        VStack{
             List{
                 ForEach(0..<10){ form in
                     FormListCell(cellHeight: cellHeight)
@@ -22,49 +29,18 @@ struct FormListView: View {
                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
                   
             }
-        
-    }
-}
-
-struct FormView_Previews: PreviewProvider {
-    static var previews: some View {
-        FormListView()
             
+            content
+        }
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+extension FormQuizzList where Content == EmptyView {
+    
+    init(){
+        self.init{
+            EmptyView()
+        }
+    }
+}
