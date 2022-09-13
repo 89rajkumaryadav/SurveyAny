@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username: String = ""
-    @State private var password: String = ""
-    
+   
+    @ObservedObject var loginVM = LoginVM()
+   
     var body: some View {
         VStack{
            // Title
@@ -21,13 +21,10 @@ struct LoginView: View {
                 .padding(.bottom, 30)
             
             // Username
-            TextField("Username", text: $username)
-                .setTitleAndBackground(title: "Username")
-                
+            TextFieldTitleV(prompt: loginVM.userNamePrompt, placeholder: "Username", field: $loginVM.username)
             
             //Password
-            SecureField("Password", text: $password)
-                .setTitleAndBackground(title: "Password")
+            TextFieldTitleV(isSecure: true, prompt: loginVM.passwordPrompt, placeholder: "Password", field: $loginVM.password)
             
             
             //Login Button

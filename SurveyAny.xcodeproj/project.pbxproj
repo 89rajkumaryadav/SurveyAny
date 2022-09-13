@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		564748AB28D0A71B0035FD4E /* Textfields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564748AA28D0A71B0035FD4E /* Textfields.swift */; };
 		566D585B28CB869500010EFE /* FormQuizzList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566D585A28CB869500010EFE /* FormQuizzList.swift */; };
 		566D585D28CB8D4F00010EFE /* QuizzesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566D585C28CB8D4F00010EFE /* QuizzesView.swift */; };
 		566D585F28CB8EB500010EFE /* DraftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566D585E28CB8EB500010EFE /* DraftsView.swift */; };
@@ -24,6 +25,7 @@
 		568DB34D27A1A37D00E98F4B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DB34C27A1A37D00E98F4B /* RootView.swift */; };
 		568DB34F27A1A72600E98F4B /* FormListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DB34E27A1A72600E98F4B /* FormListView.swift */; };
 		568DB35227A1A90400E98F4B /* FormListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DB35127A1A90400E98F4B /* FormListCell.swift */; };
+		56AE137E28D08A5D00CFBBF9 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE137D28D08A5D00CFBBF9 /* LoginVM.swift */; };
 		56C6496F28CA2E6E003186EA /* GeneralModifires.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C6496E28CA2E6E003186EA /* GeneralModifires.swift */; };
 		56C6497228CA3E35003186EA /* GeneralExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C6497128CA3E35003186EA /* GeneralExtension.swift */; };
 		56FC123228CF602D00914B4B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC123128CF602D00914B4B /* LoginView.swift */; };
@@ -50,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		564748AA28D0A71B0035FD4E /* Textfields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textfields.swift; sourceTree = "<group>"; };
 		566D585A28CB869500010EFE /* FormQuizzList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormQuizzList.swift; sourceTree = "<group>"; };
 		566D585C28CB8D4F00010EFE /* QuizzesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesView.swift; sourceTree = "<group>"; };
 		566D585E28CB8EB500010EFE /* DraftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftsView.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		568DB34C27A1A37D00E98F4B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		568DB34E27A1A72600E98F4B /* FormListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormListView.swift; sourceTree = "<group>"; };
 		568DB35127A1A90400E98F4B /* FormListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormListCell.swift; sourceTree = "<group>"; };
+		56AE137D28D08A5D00CFBBF9 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		56C6496E28CA2E6E003186EA /* GeneralModifires.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModifires.swift; sourceTree = "<group>"; };
 		56C6497128CA3E35003186EA /* GeneralExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralExtension.swift; sourceTree = "<group>"; };
 		56FC123128CF602D00914B4B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 				566D586528CB917700010EFE /* cell */,
 				566D586628CB919F00010EFE /* Modifires */,
 				566D586728CB91AD00010EFE /* ViewBuilder */,
+				564748AA28D0A71B0035FD4E /* Textfields.swift */,
 			);
 			path = ReusableView;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				56FC123128CF602D00914B4B /* LoginView.swift */,
+				56AE137D28D08A5D00CFBBF9 /* LoginVM.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				56FC123228CF602D00914B4B /* LoginView.swift in Sources */,
 				566D586428CB911000010EFE /* SignupView.swift in Sources */,
 				568DB34F27A1A72600E98F4B /* FormListView.swift in Sources */,
+				56AE137E28D08A5D00CFBBF9 /* LoginVM.swift in Sources */,
 				568DB32527A1A05A00E98F4B /* SurveyAny.xcdatamodeld in Sources */,
 				566D585F28CB8EB500010EFE /* DraftsView.swift in Sources */,
 				568DB35227A1A90400E98F4B /* FormListCell.swift in Sources */,
@@ -411,6 +418,7 @@
 				566D586128CB8F2600010EFE /* MyAccountView.swift in Sources */,
 				56FC123B28CF88C700914B4B /* TextStyleExtension.swift in Sources */,
 				568DB34D27A1A37D00E98F4B /* RootView.swift in Sources */,
+				564748AB28D0A71B0035FD4E /* Textfields.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -553,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
